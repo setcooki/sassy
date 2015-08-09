@@ -1,0 +1,31 @@
+{
+  "name": "Sassy",
+  "description": "Foundation sass extension for common and missing styles",
+  "authors": [
+    "setcooki <set@cooki.me> (http://set.cooki.me)"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zurb/foundation/blob/master/LICENSE"
+    }
+  ],
+  "main": [
+    "css/sassy.css"],
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-config": "~0.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/setcooki/sassy"
+  },
+  "keywords": [
+    "setcooki",
+    "sassy"
+  ],
+  "private": true
+}
