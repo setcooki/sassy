@@ -1,0 +1,16 @@
+// sassy foundation extension
+// author: setcooki <set@cooki.me>
+// Licensed under MIT Open Source
+
+@import 'compass';
+
+@import '../functions';
+
+$primary-color:                           false !default;
+$secondary-color:                         false !default;
+$alert-color:                             false !default;
+$success-color:                           false !default;
+$warning-color:                           false !default;
+$info-color:                              false !default;
+
+$sassy-path-image:                        "img" !default;

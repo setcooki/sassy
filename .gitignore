@@ -1,0 +1,6 @@
+#ignore compile, tmp and test resources
+setup.sh
+compile.sh
+.sass-cache
+tmp
+test

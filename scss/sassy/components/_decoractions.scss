@@ -1,0 +1,29 @@
+// sassy foundation extension
+// author: setcooki <set@cooki.me>
+// Licensed under MIT Open Source
+
+@import 'global';
+
+$sassy-decoration-icon-margin:                10px;
+
+a.up{
+  color: blue;
+}
+
+a.up:after,
+a.more:after,
+a.back:after,
+a.down:after, {
+  content: " ";
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+
+a.up:after{
+  width: 15px;
+  height: 10px;
+  margin-left: 10px;
+  background: inline-svg("svg/up.svg", '#000') transparent 0 0 no-repeat;
+}

@@ -14,14 +14,14 @@
     "css/sassy.css"
   ],
   "ignore": [
-    "source",
-    "spec",
+    ".sass-cache",
     ".bowerrc",
     ".gitignore",
     ".jshintignore",
     ".jshintrc",
+    "test",
+    "tmp",
     "bower.json",
-    "gruntfile.js",
     "package.json",
     "README.md"
   ],

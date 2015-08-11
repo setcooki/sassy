@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,KAAK,CAEH,KAAK,CAAE,KAAK,CCEd,iDAGc,CACZ,OAAO,CAAE,GAAG,CACZ,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,YAAY,CACrB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CAGT,UAAU,CACR,UAAU,CAAE,yCAAkD",
+"sources": ["../scss/sassy/components/_type.scss","../scss/sassy/components/_decoractions.scss"],
+"names": [],
+"file": "sassy.min.css"
+}
