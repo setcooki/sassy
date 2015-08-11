@@ -22,8 +22,7 @@
     "test",
     "tmp",
     "bower.json",
-    "package.json",
-    "README.md"
+    "package.json"
   ],
   "repository": {
     "type": "git",
