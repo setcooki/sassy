@@ -19,7 +19,6 @@ Gem::Specification.new do |gem|
   # Gem Files
   gem.files = ["readme.md"]
   gem.files += Dir.glob("lib/**/*.*")
-  gem.files += Dir.glob("stylesheets/**/*.*")
 
   # Dependencies
   gem.add_dependency 'sass',    '~> 3.4.0'
