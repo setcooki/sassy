@@ -1,4 +1,13 @@
+require 'compass'
 require 'sass'
+
+extension_path = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+Compass::Frameworks.register('sassy', :path => extension_path)
+
+module Sassy
+  VERSION = "1.0.0"
+  DATE = "2015-08-11"
+end
 
 module Sass::Script::Functions
 

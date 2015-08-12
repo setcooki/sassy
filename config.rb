@@ -1,4 +1,4 @@
-require_relative 'ruby/svg'
+require_relative 'lib/sassy'
 
 http_path = "/"
 css_dir = "css"
