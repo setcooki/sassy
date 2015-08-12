@@ -14,7 +14,8 @@ module.exports = function(grunt)
                     sassDir: 'test/scss',
                     cssDir: 'test',
                     trace: true,
-                    debugInfo: false
+                    debugInfo: false,
+                    noLineComments: true
                 }
             }
         },
