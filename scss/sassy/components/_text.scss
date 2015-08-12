@@ -1,0 +1,9 @@
+// sassy foundation extension
+// author: setcooki <set@cooki.me>
+// Licensed under MIT Open Source
+
+$sassy-text-tiny-font-size:               80% !default;
+
+.text-tiny{
+  font-size: $sassy-text-tiny-font-size;
+}

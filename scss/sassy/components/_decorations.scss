@@ -4,10 +4,10 @@
 
 @import 'global';
 
-$sassy-decoration-icon-margin:                10px;
+$sassy-decoration-icon-margin:                10px !default;
 
 a.up{
-  color: blue;
+  color: $primary-color;
 }
 
 a.up:after,
@@ -25,5 +25,5 @@ a.up:after{
   width: 15px;
   height: 10px;
   margin-left: 10px;
-  background: inline-svg("svg/up.svg", '#000') transparent 0 0 no-repeat;
+  background: inline-svg("svg/up.svg", $primary-color) transparent 0 0 no-repeat;
 }

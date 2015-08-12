@@ -12,13 +12,23 @@ end
 module Sass::Script::Functions
 
   def inline_svg(path, stroke = nil, fill = nil)
-    real_path = File.join(Compass.configuration.images_path, path.value)
+     real_path = File.join(Compass.configuration.images_path, path.value)
     svg = get_data(real_path)
     unless stroke.nil?
-        svg.gsub!(/(?:stroke="([^"]+))"/, %{stroke=\"#{stroke.value}\"})
+      if(stroke.is_a?(String))
+        s = stroke.value
+      else
+        s = stroke
+      end
+      svg.gsub!(/(?:stroke="([^"]+))"/, %{stroke=\"#{s}\"})
     end
     unless fill.nil?
-        svg.gsub!(/(?:fill="([^"]+))"/, %{fill=\"#{fill.value}\"})
+      if(fill.is_a?(String))
+        f = fill.value
+      else
+        f = fill
+      end
+      svg.gsub!(/(?:fill="([^"]+))"/, %{fill=\"#{f}\"})
     end
     svg = make_inline(svg, 'image/svg+xml')
     Sass::Script::String.new(svg)

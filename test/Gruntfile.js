@@ -5,15 +5,33 @@ module.exports = function(grunt)
         compass: {
             dist: {
                 options: {
-                    load: 'bower_components/sassy',
+                    load: '../',
                     importPath: [
                         'bower_components/foundation/scss',
-                        'bower_components/sassy/scss'
+                        '../scss'
                     ],
-                    imagesPath: 'bower_components/sassy/img',
+                    imagesPath: '../img',
                     sassDir: 'test/scss',
-                    cssDir: 'test'
+                    cssDir: 'test',
+                    trace: true,
+                    debugInfo: false
                 }
+            }
+        },
+        watch: {
+            options: {
+                spawn: false,
+                interrupt: true,
+                interval: 2000
+            },
+            css: {
+                files: [
+                    'test/*.scss',
+                    'test/**/*.scss',
+                    '../scss/*.scss',
+                    '../scss/**/*.scss'
+                ],
+                tasks: ['compass']
             }
         }
     });
@@ -29,4 +47,5 @@ module.exports = function(grunt)
     grunt.loadNpmTasks("grunt-modernizr");
 
     grunt.registerTask("build", ["compass"]);
+    grunt.registerTask("live", ["watch"]);
 };

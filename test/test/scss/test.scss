@@ -1,4 +1,5 @@
 @import "foundation/settings";
+//@import "settings";
 
 @import
   "foundation/components/global",
@@ -11,7 +12,4 @@
   "foundation/components/breadcrumbs"
   ;
 
-@import
-  "sassy/components/global",
-  "sassy/components/decorations"
-  ;
+@import "sassy";
