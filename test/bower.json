@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "sassy": "https://github.com/setcooki/sassy.git#master"
+  }
+}
